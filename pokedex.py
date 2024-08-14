@@ -7,6 +7,7 @@ from io import BytesIO
 # Variável global para a imagem do Tkinter
 tk_image = None
 image_label = None
+
 # Variável global para a imagem do Tkinter
 tk_image2 = None
 image_label2 = None
@@ -106,6 +107,7 @@ def get_type_effectiveness(pokemon_types):
 def download_image(url):
     response = requests.get(url)
     return Image.open(BytesIO(response.content))
+
 #Fazendo download da imagem para apresenta
 def download_image2(url2):
     response2 = requests.get(url2)
